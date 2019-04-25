@@ -16,7 +16,7 @@ public final class MinesweeperBoardTest {
     @Rule
     public ExpectedException expectedException = ExpectedException.none();
 
-    @Ignore
+    
     @Test
     public void test_Input_Board_With_No_Rows_And_No_Columns() {
         final List<String> inputBoard = Collections.emptyList();
@@ -27,7 +27,7 @@ public final class MinesweeperBoardTest {
         assertEquals(expectedAnnotatedRepresentation, actualAnnotatedRepresentation);
     }
 
-    @Ignore
+    
     @Test
     public void test_Input_Board_With_One_Row_And_No_Columns() {
         final List<String> inputBoard = Collections.singletonList("");
@@ -38,7 +38,7 @@ public final class MinesweeperBoardTest {
         assertEquals(expectedAnnotatedRepresentation, actualAnnotatedRepresentation);
     }
 
-    @Ignore
+    
     @Test
     public void test_Input_Board_With_No_Mines() {
         final List<String> inputBoard = Arrays.asList(
@@ -59,7 +59,7 @@ public final class MinesweeperBoardTest {
         assertEquals(expectedAnnotatedRepresentation, actualAnnotatedRepresentation);
     }
 
-    @Ignore
+    
     @Test
     public void test_Input_Board_With_Only_Mines() {
         final List<String> inputBoard = Arrays.asList(
@@ -80,7 +80,7 @@ public final class MinesweeperBoardTest {
         assertEquals(expectedAnnotatedRepresentation, actualAnnotatedRepresentation);
     }
 
-    @Ignore
+    
     @Test
     public void test_Input_Board_With_Single_Mine_At_Center() {
         final List<String> inputBoard = Arrays.asList(
@@ -101,7 +101,7 @@ public final class MinesweeperBoardTest {
         assertEquals(expectedAnnotatedRepresentation, actualAnnotatedRepresentation);
     }
 
-    @Ignore
+    
     @Test
     public void test_Input_Board_With_Mines_Around_Perimeter() {
         final List<String> inputBoard = Arrays.asList(
@@ -122,7 +122,7 @@ public final class MinesweeperBoardTest {
         assertEquals(expectedAnnotatedRepresentation, actualAnnotatedRepresentation);
     }
 
-    @Ignore
+    
     @Test
     public void test_Input_Board_With_Single_Row_And_Two_Mines() {
         final List<String> inputBoard = Collections.singletonList(
@@ -139,7 +139,7 @@ public final class MinesweeperBoardTest {
         assertEquals(expectedAnnotatedRepresentation, actualAnnotatedRepresentation);
     }
 
-    @Ignore
+    
     @Test
     public void test_Input_Board_With_Single_Row_And_Two_Mines_At_Edges() {
         final List<String> inputBoard = Collections.singletonList(
@@ -156,7 +156,7 @@ public final class MinesweeperBoardTest {
         assertEquals(expectedAnnotatedRepresentation, actualAnnotatedRepresentation);
     }
 
-    @Ignore
+    
     @Test
     public void test_Input_Board_With_Single_Column_And_Two_Mines() {
         final List<String> inputBoard = Arrays.asList(
@@ -181,7 +181,7 @@ public final class MinesweeperBoardTest {
         assertEquals(expectedAnnotatedRepresentation, actualAnnotatedRepresentation);
     }
 
-    @Ignore
+    
     @Test
     public void test_Input_Board_With_Single_Column_And_Two_Mines_At_Edges() {
         final List<String> inputBoard = Arrays.asList(
@@ -206,7 +206,7 @@ public final class MinesweeperBoardTest {
         assertEquals(expectedAnnotatedRepresentation, actualAnnotatedRepresentation);
     }
 
-    @Ignore
+    
     @Test
     public void test_Input_Board_With_Mines_In_Cross() {
         final List<String> inputBoard = Arrays.asList(
@@ -231,7 +231,7 @@ public final class MinesweeperBoardTest {
         assertEquals(expectedAnnotatedRepresentation, actualAnnotatedRepresentation);
     }
 
-    @Ignore
+    
     @Test
     public void test_Large_Input_Board() {
         final List<String> inputBoard = Arrays.asList(
@@ -258,7 +258,7 @@ public final class MinesweeperBoardTest {
         assertEquals(expectedAnnotatedRepresentation, actualAnnotatedRepresentation);
     }
 
-    @Ignore
+    
     @Test
     public void test_Null_Input_Board_Is_Rejected() {
         expectedException.expect(IllegalArgumentException.class);
@@ -267,7 +267,7 @@ public final class MinesweeperBoardTest {
         new MinesweeperBoard(null);
     }
 
-    @Ignore
+    
     @Test
     public void test_Input_Board_With_Invalid_Symbols_Is_Rejected() {
         expectedException.expect(IllegalArgumentException.class);
@@ -276,7 +276,7 @@ public final class MinesweeperBoardTest {
         new MinesweeperBoard(Collections.singletonList(" * & "));
     }
 
-    @Ignore
+    
     @Test
     public void test_Input_Board_With_Inconsistent_Row_Lengths_Is_Rejected() {
         expectedException.expect(IllegalArgumentException.class);
